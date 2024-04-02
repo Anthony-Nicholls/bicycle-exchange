@@ -1,3 +1,10 @@
+function onSubmit() {
+    parent.window.location.href="https://www.example.com/?"
+        + "year=" + getSelectedYear().toString()
+        + "&msrp=" + getMSRP().toString()
+        + "&trade-in=" + isTradeIn().toString()
+}
+
 function getMSRP()
 {
     return document.getElementById("price").value
